@@ -1,0 +1,99 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+	background-color: #eee;
+}
+.nav {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100px;
+    text-align: center;
+}
+a:hover{
+	background-color:white;
+}
+.product-container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 760px;
+    padding: 20px;
+    /* to offest the fixed nav at top */
+    padding-top: 49px;
+}
+.row {
+    display: flex;
+}
+.product-image {
+    width: 400px;
+}
+.product-image img {
+    width: 100%;
+}
+.product-image .promo {
+    border: 2px solid green;
+	background-color: #E7FFD5;
+    padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product-detail {
+    width: 380px;
+    padding-left: 20px;
+}
+.related-product {
+    width: 126px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color:moccasin;
+    position: relative;
+}
+.related-product img {
+    width: 126px;
+    height: 126px;
+    object-fit: cover;
+}
+.related-product .related-product-name {
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+.related-product .related-product-name h3 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.related-product:hover .related-product-name {
+    visibility: visible;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 10px;
+}
